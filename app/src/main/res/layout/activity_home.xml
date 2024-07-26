@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Bienvenue,mohamed"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/poppinslight"
+                android:text="mohamed@gmail.com"
+                android:textColor="#000"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="28dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+
+
+                app:srcCompat="@drawable/out" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        app:iss_placeholder="@drawable/icons64"
+        app:iss_text_align="CENTER"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text = "Votre diagnostique"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="274dp">
+        <LinearLayout
+            android:id="@+id/imcLayout121"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="0"
+
+            android:background="@drawable/home_backg_heart"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="274dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="135dp"
+                android:layout_height="125dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/animation18"
+                tools:ignore="MissingClass,MissingConstraints"
+                tools:layout_editor_absoluteY="-84dp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/imcLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:layout_marginTop="5dp"
+
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="274dp">
+
+                <TextView
+                    android:id="@+id/imcCateg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Votre percentage de voir la maladie:"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/imcDesc1"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="76%"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/btnNexts"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/home_button"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Voir plus"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.44"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.875"
+                    tools:ignore="MissingConstraints,RtlCompat" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+
+
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="274dp">
+        <LinearLayout
+            android:id="@+id/imcLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_weight="0"
+
+            android:background="@drawable/home_background"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="274dp">
+
+            <TextView
+                android:id="@+id/imcPerc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="40%"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <LinearLayout
+                android:id="@+id/imcLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="0"
+                android:background="@drawable/home_background"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="274dp">
+
+                <TextView
+                    android:id="@+id/imcCateg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Votre IMC est :"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/imcDesc"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Normal"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/btnNext"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/home_button"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Voir plus"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.44"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.875"
+                    tools:ignore="MissingConstraints,RtlCompat" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_weight="0"
+
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="274dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="start"
+            android:paddingLeft="20dp"
+            android:background="@drawable/home_info_background"
+            android:layout_weight="0.5"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/weightloss" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Weight"
+
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/weightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="68 kg"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_info_background"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="50dp"
+                android:layout_height="63dp"
+                app:srcCompat="@drawable/healthy" />
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Height"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/heightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="177 Cm"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:layout_marginTop="10dp"
+
+
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="274dp">
+        <LinearLayout
+            android:id="@+id/imcLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="0"
+
+            android:background="@drawable/home_info2_background"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="274dp">
+
+            <LinearLayout
+                android:id="@+id/imcLayout72"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="0"
+                android:background="@drawable/home_info2_background"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                tools:layout_editor_absoluteX="274dp">
+
+                <ImageView
+                    android:id="@+id/imageView414"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="48dp"
+                    android:layout_height="53dp"
+                    app:srcCompat="@drawable/icons8" />
+
+                <TextView
+                    android:id="@+id/imcCateg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:layout_marginStart="10dp"
+                    android:text="Votre Medical Report"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+                <TextView
+                    android:id="@+id/btnNext7"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/home_button"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Voir plus"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.44"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.875"
+                    tools:ignore="MissingConstraints,RtlCompat" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

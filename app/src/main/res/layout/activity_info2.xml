@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="161dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            app:srcCompat="@drawable/logo12" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="236dp"
+            android:layout_height="292dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/no_data_ilustration" />
+
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:text="Entrez vos bilans médicaux " />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="Les problèmes cardiovasculaires sont les principales complications chez les individus souffrant de diabète du type 2. La gestion attentive des différents facteurs de risque pouvait considérablement réduire l'incidence de ces maladies et la mortalité parmi ces individus"
+            android:textAlignment="center"
+
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/btn_suivant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/button_background"
+
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="Commencer "
+
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
